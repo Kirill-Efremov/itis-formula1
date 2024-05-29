@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/icon_flag"
+        android:title="Standings" />
+
+    <item
+        android:id="@+id/nav_race"
+        android:icon="@drawable/icon_sports"
+        android:title="Race" />
+
+    <item
+        android:id="@+id/nac_account"
+        android:icon="@drawable/icon_person"
+        android:title="Account" />
+</menu>
