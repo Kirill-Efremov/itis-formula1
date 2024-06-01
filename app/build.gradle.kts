@@ -42,6 +42,11 @@ android {
                 "SUPABASE_KEY",
                 "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp5bmZ5aW56Z21sZHRiZnZueXlwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTU2NTYzOTcsImV4cCI6MjAzMTIzMjM5N30._cFBoVlPgA6GH5e8b70Qwu7xeHnLscwE-UuUUgFfb3E\""
             )
+            buildConfigField(
+                "String",
+                "API_URL",
+                "\"https://ergast.com/api/\""
+            )
         }
     }
 

@@ -10,7 +10,7 @@
         android:id="@+id/account_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Account Name"
+        android:text="@string/account_name"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="32dp"/>
@@ -19,5 +19,5 @@
         android:id="@+id/log_out_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log Out" />
+        android:text="@string/log_out" />
 </LinearLayout>

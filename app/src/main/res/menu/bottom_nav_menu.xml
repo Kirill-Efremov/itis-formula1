@@ -4,16 +4,16 @@
 
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/icon_flag"
-        android:title="Standings" />
+        android:icon="@drawable/icon_sports"
+        android:title="@string/standings" />
 
     <item
         android:id="@+id/nav_race"
-        android:icon="@drawable/icon_sports"
-        android:title="Race" />
+        android:icon="@drawable/icon_flag"
+        android:title="@string/race" />
 
     <item
         android:id="@+id/nac_account"
         android:icon="@drawable/icon_person"
-        android:title="Account" />
+        android:title="@string/account" />
 </menu>

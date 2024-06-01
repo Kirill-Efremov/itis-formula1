@@ -1,5 +1,26 @@
 <resources>
-    <string name="app_name">RaceAppXml</string>
+    <string name="app_name">Formula 1</string>
     <string name="upcoming_races">Upcoming Races</string>
     <string name="past_races">Past Races</string>
+    <string name="race_started">The race has not started yet!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="log_out">Log Out</string>
+    <string name="account_name">Account Name</string>
+    <string name="_1">1</string>
+    <string name="max_verstappen">Max Verstappen</string>
+    <string name="_22_46">+22.46</string>
+    <string name="_26">26</string>
+    <string name="race">Race</string>
+    <string name="account">Account</string>
+    <string name="standings">Standings</string>
+    <string name="incorrectly_input">The username or password was entered incorrectly</string>
+    <string name="register_successful">Registration successful</string>
+    <string name="password_error">Password should be at least 6 characters</string>
+    <string name="invalid_format">Unable to validate email address: invalid format</string>
+    <string name="user_registered">User already registered</string>
+    <string name="registration_error">Registration error, please try to register later</string>
+    <string name="empty_email_and_password">Email and password must not be empty</string>
+    <string name="login">Login</string>
 </resources>
