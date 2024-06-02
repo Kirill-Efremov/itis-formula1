@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/race_detail_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/driver_detail_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+
+    <TextView
+        android:id="@+id/detail_driver_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_information"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/detail_driver_dtb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_information"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+
+    <TextView
+        android:id="@+id/detail_driver_nationality_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nationality"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/detail_driver_nationality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_information"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp" />
+
+    <TextView
+        android:id="@+id/detail_driver_permant_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/permant_number"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/detail_driver_permant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_information"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+
+</LinearLayout>

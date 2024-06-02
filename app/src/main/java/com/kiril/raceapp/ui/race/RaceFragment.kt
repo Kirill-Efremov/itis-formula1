@@ -37,7 +37,7 @@ class RaceFragment : Fragment() {
         raceViewModel.fetchNextRace()
 
 
-        toggleButtonGroup.addOnButtonCheckedListener { group, checkedId, isChecked ->
+        toggleButtonGroup.addOnButtonCheckedListener { _, checkedId, isChecked ->
             if (isChecked) {
                 when (checkedId) {
                     R.id.upcoming_races -> raceViewModel.fetchNextRace()

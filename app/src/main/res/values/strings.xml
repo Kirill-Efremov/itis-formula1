@@ -23,4 +23,8 @@
     <string name="registration_error">Registration error, please try to register later</string>
     <string name="empty_email_and_password">Email and password must not be empty</string>
     <string name="login">Login</string>
+    <string name="no_information">No information</string>
+    <string name="nationality">Nationality</string>
+    <string name="permant_number">Permant Number</string>
+    <string name="driver_name">Driver Name</string>
 </resources>

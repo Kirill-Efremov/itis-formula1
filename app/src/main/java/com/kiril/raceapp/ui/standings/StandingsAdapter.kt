@@ -1,5 +1,6 @@
 package com.kiril.raceapp.ui.standings
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,6 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.kiril.raceapp.R
 import com.kiril.raceapp.data.standings.model.DriverStanding
+import com.kiril.raceapp.ui.standings.driver.DriverDetailActivity
+import com.kiril.raceapp.ui.util.ParamsKey
 
 class StandingsAdapter(private var standings: List<DriverStanding>) :
     RecyclerView.Adapter<StandingsAdapter.StandingsViewHolder>() {
@@ -18,6 +21,16 @@ class StandingsAdapter(private var standings: List<DriverStanding>) :
     }
 
     override fun onBindViewHolder(holder: StandingsViewHolder, position: Int) {
+        val driver = standings[position]
+
+        holder.itemView.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, DriverDetailActivity::class.java).apply {
+                putExtra(ParamsKey.NAME_KEY, driver.driver.familyName)
+            }
+            context.startActivity(intent)
+        }
+
         holder.bind(standings[position])
     }
 

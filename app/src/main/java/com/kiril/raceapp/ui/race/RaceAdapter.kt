@@ -5,11 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.browser.trusted.sharing.ShareTarget.Params
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.kiril.raceapp.R
 import com.kiril.raceapp.data.race.model.Race
+import com.kiril.raceapp.ui.util.ParamsKey
 
 class RaceAdapter : ListAdapter<Race, RaceAdapter.RaceViewHolder>(RaceDiffCallback()) {
 
@@ -25,9 +27,9 @@ class RaceAdapter : ListAdapter<Race, RaceAdapter.RaceViewHolder>(RaceDiffCallba
         holder.itemView.setOnClickListener {
             val context = holder.itemView.context
             val intent = Intent(context, RaceDetailActivity::class.java).apply {
-                putExtra("season", race.season)
-                putExtra("round", race.round)
-                putExtra("name", race.raceName)
+                putExtra(ParamsKey.SEASON_KEY, race.season)
+                putExtra(ParamsKey.ROUND_KEY, race.round)
+                putExtra(ParamsKey.NAME_KEY, race.raceName)
             }
             context.startActivity(intent)
         }

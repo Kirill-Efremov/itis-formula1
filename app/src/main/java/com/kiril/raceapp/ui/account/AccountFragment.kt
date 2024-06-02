@@ -35,12 +35,16 @@ class AccountFragment : Fragment() {
 
         val accountNameTextView: TextView = view.findViewById(R.id.account_name)
         val logOutButton: Button = view.findViewById(R.id.log_out_button)
+        val editButton: Button = view.findViewById(R.id.edit_profile_button)
 
         accountNameTextView.text =
             user?.email
 
         logOutButton.setOnClickListener {
             logOut()
+        }
+        editButton.setOnClickListener {
+            startActivity(Intent(context, EditActivity::class.java))
         }
     }
 

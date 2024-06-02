@@ -8,12 +8,19 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/formula"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/RaceTheme"
         tools:targetApi="31">
+
+        <activity
+                android:name=".ui.standings.driver.DriverDetailActivity"
+                android:exported="false" />
+
+        <activity
+                android:name=".ui.account.EditActivity"
+                android:exported="false" />
         <activity
                 android:name=".ui.race.RaceDetailActivity"
                 android:exported="false" />

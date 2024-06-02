@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.appbar.MaterialToolbar
 import com.kiril.raceapp.R
+import com.kiril.raceapp.ui.util.ParamsKey
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -20,9 +21,9 @@ class RaceDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_race_detail)
 
-        val season = intent.extras?.getString("season") ?: ""
-        val round = intent.extras?.getString("round") ?: ""
-        val name = intent.extras?.getString("name") ?: ""
+        val season = intent.extras?.getString(ParamsKey.SEASON_KEY) ?: ""
+        val round = intent.extras?.getString(ParamsKey.ROUND_KEY) ?: ""
+        val name = intent.extras?.getString(ParamsKey.NAME_KEY) ?: ""
         println(name)
 
 

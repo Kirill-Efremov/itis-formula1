@@ -20,7 +20,6 @@ class RaceDetailViewModel @Inject constructor(
     private val _raceInfo = MutableLiveData<RaceDetail>()
     val raceInfo: LiveData<RaceDetail> get() = _raceInfo
 
-    private val currentDate: LocalDate = LocalDate.now()
 
     fun fetchRaceDetails(year: String, round: String) {
         viewModelScope.launch {
